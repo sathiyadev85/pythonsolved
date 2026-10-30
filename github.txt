@@ -1,0 +1,207 @@
+Q1:
+
+i=int(input())
+f=float(input())
+st=input().strip()
+l=int(input())
+d=float(input())
+print(i)
+print(f)
+print(st)
+print(l)
+print(d)
+---------------------------------------------
+Q2:
+a=(input())
+b=float(a)
+print(f"{b:.5f}")
+print(f"{b:.4f}")
+print(f"{b:.3f}")
+print(f"{b:.2f}")
+print(f"{b:.1f}")
+
+
+-----------------------------------------------
+Q3:
+a, b = map(int, input().split())
+print(a + b)
+print(a - b)
+print(a * b)
+print(int(a/b))
+if a<0:
+  c=abs(a)%abs(b)
+  print(-1*c)
+else:
+  print(a%b)
+
+
+--------------------------------------------------
+Q4
+
+a=int(input())
+b=chr(a)
+print(b)
+----------------------------
+q5
+
+a=int(input())
+print(((a + 5) * 2) - 3)
+----------------------------------
+Q6
+a=int(input())
+print(((a + 5) * 2) - 3)
+---------------------------------
+Q7
+a=int(input())
+b=int(input())
+c=int(input())
+result=a if a>b and a>c else b if b>a and b>c else c
+print(result)
+------------------------------------
+Q8
+name=input()
+sub1=int(input())
+sub2=int(input())
+sub3=int(input())
+sub4=int(input())
+sub5=int(input())
+total=(sub1+sub2+sub3+sub4+sub5)
+avg=total/5
+print(f"Student Name: {name}")
+print(f"Total Marks: {total}")
+print(f"Average Marks: {avg:.2f}")
+--------------------------------------------------
+Q9
+side=int(input())
+l=int(input())
+b=int(input())
+r=int(input())
+B=int(input())
+H=int(input())
+sqr=side*side
+rec=l*b
+cir=3.14*pow(r,2)
+tri=0.5*B*H
+print(f"Area of Square={sqr}")
+print(f"Area of Rectangle={rec}")
+print(f"Area of Circle={cir:.2f}")
+print(f"Area of Triangle={tri:.0f}")
+
+-------------------------------------
+Q10
+a=int(input())
+l=int(input())
+w=int(input())
+r=int(input())
+b1=int(input())
+s=int(input())
+b2=int(input())
+
+print(4*a)
+print(2 * (l + w))
+print(f"{2 * 3.14 * r:.2f}")
+print(s+b1+b2)
+------------------------------------
+Q11
+for i in range(1, 6):
+    for j in range(i):
+        print("*", end="")
+    print()
+-------------------------------------
+Q12.
+n=input()
+print(len(n))
+----------------------
+Q13
+a=input()
+b=input()
+print(a + " "+b)
+--------------------
+Q14
+a=input()
+b=input()
+if a==b:
+  print("true")
+else:
+  print("false")
+--------------------
+Q15
+n=input()
+print(n[0])
+-----------------------------
+Q16
+n=input()
+print(n[-1])
+--------------------------------
+Q17
+n=input()
+a=n.split(",")
+for i in a:
+  print(i)
+--------------------------------
+18
+n=input()
+res=""
+for i in n:
+  if i not in "aeiouAEIOU":
+    res +=i
+print(res)
+  
+-----------------------------------
+19
+n = input()
+print(n.swapcase())
+------------------------------------
+20
+n=input()
+print(ord(n))
+-------------------------------------
+21
+n = input()
+ch = input()
+res = ""
+
+for i in n:
+    if i != ch:
+        res += i
+
+print(res)
+--------------------------------------
+22
+n = input()
+ch = input()
+
+if ch in n:
+    print("true")
+else:
+    print("false")
+----------------------------------------
+23
+n=input()
+v=0
+c=0
+for i in n:
+  if i in "aeiouAEIOU":
+    v +=1
+  elif i.isalpha():
+    c +=1
+print(v)
+print(c)
+----------------------------------------------
+24
+n = input()
+m = input()
+n1=n.replace(" ","")
+m1=m.replace(" ","")
+if sorted(n1.lower()) == sorted(m1.lower()):
+  print("true")
+else:
+  print("false")
+--------------------------------------
+25
+n=input()
+rev =n[::-1]
+if n==rev:
+  print("true")
+else:
+  print("false")
